@@ -10,13 +10,13 @@ class subinfo(info.infoclass):
             self.options.dynamic.registerOption("sparkleLibPath", "")
 
     def setTargets(self):
-        self.svnTargets["qt5-lts"] = "[git]https://github.com/IONOS-Productivity/nc-desktop"
+        self.svnTargets["main"] = "[git]https://github.com/IONOS-Productivity/nc-desktop|feature/SES-42_pipeline"
 
         self.description = "Nextcloud Desktop Client"
         self.displayName = "Nextcloud"
         self.webpage = "https://nextcloud.com"
 
-        self.defaultTarget = "qt5-lts"
+        self.defaultTarget = "main"
 
     def setDependencies(self):
         self.buildDependencies["dev-utils/cmake"] = None
