@@ -34,8 +34,6 @@ class subinfo(info.infoclass):
         self.runtimeDependencies["qt-libs/qtkeychain"] = None
         self.runtimeDependencies["kde/frameworks/tier1/karchive"] = None
         self.runtimeDependencies["libs/openssl"] = None
-        if CraftCore.compiler.isMacOS:
-            self.runtimeDependencies["libs/qt5/qt5macextras"] = None
 
 class Package(CMakePackageBase):
     def __init__(self, **kwargs):
