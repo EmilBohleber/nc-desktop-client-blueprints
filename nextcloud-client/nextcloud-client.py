@@ -29,6 +29,8 @@ class subinfo(info.infoclass):
         self.runtimeDependencies["libs/qt5/qtquickcontrols2"] = None
         self.runtimeDependencies["libs/qt5/qtgraphicaleffects"] = None
         self.runtimeDependencies["libs/qt5/qtmultimedia"] = None
+        if CraftCore.compiler.isMacOS:
+            self.runtimeDependencies["libs/qt5/qtmacextras"] = None
         self.runtimeDependencies["libs/zlib"] = None
         self.runtimeDependencies["libs/libp11"] = None
         self.runtimeDependencies["qt-libs/qtkeychain"] = None
